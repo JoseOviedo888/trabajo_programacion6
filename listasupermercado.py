@@ -11,7 +11,7 @@ def main(page: ft.Page):
     
     # Mostrar mensaje de bienvenida al cargar la página
     def show_welcome_message():
-        page.snack_bar = ft.SnackBar(ft.Text("¡Bienvenido Donald Trump!"), open=True)
+        page.snack_bar = ft.SnackBar(ft.Text("¡Bienvenido Jose Oviedo!"), open=True)
         page.update()
     
     # Función para añadir tarea
@@ -36,8 +36,8 @@ def main(page: ft.Page):
 
     # Encabezado y logo
     logo = ft.Image(src=r"../img/cochino.png", width=125, height=125)  # Ruta absoluta
-    header_text = ft.Text("Lista", size=20, weight=ft.FontWeight.BOLD, text_align=ft.TextAlign.CENTER)
-    header_welcome = ft.Text("Bienvenido", size=15, text_align=ft.TextAlign.CENTER)
+    header_text = ft.Text("Lista de Compras", size=20, weight=ft.FontWeight.BOLD, text_align=ft.TextAlign.CENTER)
+    header_welcome = ft.Text("Estamos listos para anotar", size=15, text_align=ft.TextAlign.CENTER)
     
     header = ft.Column(
         [logo, header_text, header_welcome],
@@ -50,7 +50,7 @@ def main(page: ft.Page):
     )
     
     # Campo de texto para escribir tareas
-    new_task = ft.TextField(hint_text="¿Qué hace falta?", width=300)
+    new_task = ft.TextField(hint_text="¿Cuales son las compras pendientes?", width=300)
     
     # Contenedor donde se mostrarán las tareas
     task_list = ft.Column()  # Columna que contendrá las tareas en formato Checkbox
